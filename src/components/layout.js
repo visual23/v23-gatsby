@@ -28,7 +28,7 @@ const Layout = ({ children, bodyClasses}) => {
               <div className="row">
                 <div className="col-md-6">
                   <div className="copyright">
-                    <span>© {new Date().getFullYear()} Visual23 - Made with <Heart/> in Asheville</span>
+                    <span>© {new Date().getFullYear()} Visual23 - Built with <Heart/> in Asheville</span>
                   </div>
                 </div>
                 <div className="col-md-6">
