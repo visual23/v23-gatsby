@@ -8,7 +8,7 @@
     padding-bottom: 40px;
     background-color: $v23_dark;
 }
-.about .site-header{
+[data-about="true"] .site-header{
   transition: background-color 0s ease-in-out;
   background-color: transparent !important;
 }

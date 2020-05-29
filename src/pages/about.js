@@ -21,7 +21,13 @@ const AboutPage = ({ data }) => {
     <>
       <Layout bodyClasses={'about'}>
       <SEO title="About" />
-      <Helmet bodyAttributes={{ class: 'about' }} />
+
+      <Helmet>
+        <body data-home="false" />
+      </Helmet>
+      <Helmet>
+        <body data-about="true" />
+      </Helmet>
       
       <div className="about-wrapper">
         <div className="container">

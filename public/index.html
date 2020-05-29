@@ -9,14 +9,10 @@ void function() {
 
   function setTheme(newTheme) {
     if (preferredTheme && document.body.classList.contains(preferredTheme)) {
-      //document.body.classList.replace(preferredTheme, newTheme)
-      document.body.setAttribute("data-color-mode", newTheme);
+      document.body.classList.replace(preferredTheme, newTheme)
     } else {
-      //document.body.classList.add(newTheme)
-      document.body.setAttribute("data-color-mode", newTheme);
+      document.body.classList.add(newTheme)
     }
-
-    console.log('at light/dark')
 
     window.__theme = newTheme
     preferredTheme = newTheme

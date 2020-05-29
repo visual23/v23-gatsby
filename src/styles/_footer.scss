@@ -43,7 +43,7 @@
 
 } // closed wrapper
 
-.about .site-footer{
+[data-about="true"] .site-footer{
 	position: fixed;
 	bottom: 0;
 	width: 100%;

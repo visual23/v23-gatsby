@@ -42,7 +42,13 @@ class App extends React.Component {
     return (
       <Layout bodyClasses={'index'}>
       <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
-      <Helmet bodyAttributes={{ class: 'home' }} />
+            
+      <Helmet>
+        <body data-home="true" />
+      </Helmet>
+      <Helmet>
+        <body data-about="false" />
+      </Helmet>
             
       <ul className="section-menu">
         <li>
