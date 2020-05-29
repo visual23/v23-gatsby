@@ -1,0 +1,18 @@
+// @font-face {
+//   font-family: 'FoundersGrotesk-Light';
+//   src: url('FoundersGrotesk-Light.eot'); /* IE9+ Compat Modes */
+//   src: url('FoundersGrotesk-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//        url('FoundersGrotesk-Light.woff2') format('woff2'), /* Super modern browsers */
+//        url('FoundersGrotesk-Light.woff') format('woff'), /* Modern browsers */
+//        url('FoundersGrotesk-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+//        url('FoundersGrotesk-Light.svg#FoundersGrotesk-Light') format('svg'); /* Legacy iOS */
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: FoundersGrotesk-Light;
+  font-weight: 400;
+  font-style: normal;
+  src: url("FoundersGrotesk-Light.woff2") format("woff2"), url("FoundersGrotesk-Light.woff") format("woff");
+  font-display: swap;
+}

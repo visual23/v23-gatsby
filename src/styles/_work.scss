@@ -1,0 +1,50 @@
+.work-detail-page{
+
+	margin-top: 168px;
+
+	.project-info{
+		margin-bottom: 50px;
+		.project-info-block{
+			h3{
+				font-size: 20px;
+				line-height: 28px;
+				color: #FFFFFF;
+				margin-bottom: 3px;
+				font-weight: normal;
+			}
+			span{
+				font-size: 20px;
+				line-height: 24px;
+				color: #B4B4B4;
+			}
+			.project-link-btn{
+				font-size: 20px;
+				line-height: 28px;
+				@include transition-all;
+				color: #09F8BF;
+				position: relative;
+
+				svg{
+					position: relative;
+					display: inline-block;
+					margin-left: 8px;
+					top: -3px; 
+				}
+
+				&:hover{
+					color:#fff;
+				}
+			}
+		}
+	}
+
+	.project-images{
+		.size-large{
+			width: 100%;
+			margin: 0 auto;
+			margin-bottom: 40px;
+		}
+	}
+	
+
+} // end wrapper

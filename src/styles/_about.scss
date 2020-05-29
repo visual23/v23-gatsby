@@ -1,0 +1,148 @@
+.about-page{
+	.header-row{
+		
+		.open-it{
+			display: none;
+		}
+		.close-it{
+			display: block;
+		}
+	}
+}
+
+.about-wrapper{
+
+	.container-fluid{
+		position: fixed !important;
+		z-index: 1;
+	}
+
+	.container{
+		position: relative;
+		height: 100%;
+		z-index: 2;
+
+		.about-right{
+			padding-top: 70px;			
+			padding-bottom: 50px;			
+
+			.about-right-content{
+				padding-left: 80px;
+				padding-right: 0px;
+				position: relative;
+
+				.about-header{
+					position: fixed;
+					top: 0;
+					width: 100%;
+					height: 136px;
+					background-color: $v23_dark;
+					transition: background-color 0.3s ease-in-out;
+					.section-title{					
+						position: absolute;
+						top: 70px;
+					}
+				}
+
+				.toggle-menu{
+					position: absolute;
+					right: 0;
+					top: -1px
+				}
+
+				
+
+				h1{
+					margin-top: 160px;
+					margin-bottom: 50px;
+				}
+			}
+
+			.social-links{
+				margin: 0;
+				margin-top: 30px;
+				padding: 0;
+				list-style: none;
+
+				li{
+					display: inline-block;
+					margin-right: 22px;
+
+					a{
+						display: block;
+						position: relative;
+						@include transition-all;
+
+						&:hover > svg > path{
+							fill: $bright_green_hover;
+						}
+
+						svg{
+							path{
+								@include transition-all;
+							}
+						}
+					}
+
+					.icon-instagram{
+						position: relative;
+						top: 1px;
+					}
+
+					.icon-facebook{
+						position: relative;
+						top: 0px;
+					}
+
+					.icon-email{
+						position: relative;
+						top: 3px;
+					}
+				}
+			}
+		}
+
+	}
+
+	.container-fluid{
+		min-height: 100%;
+    	height: 100%;
+    	position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+    	.row{
+    		min-height: 100%;
+    		height: 100%;
+
+			.col-md-6{
+
+				&:first-child{
+					min-height: 100%;
+    				height: 100%;
+				}
+				
+				padding: 0;
+
+				.about-left{
+					background-color: rgba(0, 20, 14, 1);
+					min-height: 100%;
+    				height: 100%;
+    				transition: background-color 0.3s ease-in-out;
+    				section{
+    					min-height: 100%;
+    					height: 100%;
+    					opacity: .5 !important;
+    				}
+				}
+
+				
+			}
+		}
+	}
+
+	
+	
+
+} // end wrapper

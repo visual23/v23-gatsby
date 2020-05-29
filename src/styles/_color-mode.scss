@@ -1,0 +1,48 @@
+[data-color-mode="light"]{
+	background-color: #fff;
+	color: #00140E;
+
+	.site-header{
+		background-color: #fff;
+	}
+	.logo-text{
+		g{
+			path{
+				fill: #00140E;
+			}
+		}
+			
+	}
+
+	.section-expertise{
+		color: #00140E;
+	}
+
+	h1{
+		color: #00140E;
+	}
+
+	.cool-ass-tooltip{
+		color: #fff;
+		background-color: #00140E;
+
+		&:after{
+			background-color: #00140E;
+		}
+	}
+
+	.about-header{
+		background-color: #fff !important;
+	}
+
+	.site-footer{
+		background-color: #fff;
+	}
+
+	.about-left{
+		background-color: rgba(0, 20, 14, .5) !important;
+	}
+
+
+
+} // end wrapper

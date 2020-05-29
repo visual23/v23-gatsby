@@ -1,0 +1,25 @@
+// Mixins
+@mixin transition-all() {
+  transition: all 0.2s ease-in-out;
+}
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin base-font() {
+  //font-family: 'Lato';
+  font-family: 'FoundersGrotesk-Light', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+@mixin regular-font() {
+  font-family: 'FoundersGrotesk-Regular', serif;
+  font-style: normal;
+}
+@mixin mono-font() {
+  font-family: 'FoundersGroteskMonoRegular', serif;
+  font-style: normal;
+}
