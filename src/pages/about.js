@@ -2,7 +2,7 @@ import React from "react"
 import { graphql} from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import AboutBackground from "../components/AboutBackgroundImage"
+import AboutBackground from "../components/aboutBackgroundImage"
 import { Helmet } from 'react-helmet'
 
 import IconLinkedIn from "../images/icon-linked-in.inline.svg";
