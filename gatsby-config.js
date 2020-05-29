@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Visual23`,
+        short_name: `Visual23`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
