@@ -43,6 +43,33 @@
 		background-color: rgba(0, 20, 14, .5) !important;
 	}
 
+	.work-detail-page .project-images .project-nav a .title {
+	    color: #00140E;
+	}
+
+	.work-detail-page .project-info .project-info-block h3 {
+	    color: #00140E;
+	}
+
+	.home-page .section-projects .project-list li a {
+		@include transition-all;
+	    h3{
+	    	color: #00140E;
+	    }
+
+	    &:hover{
+	    	h3{
+	    		@include transition-all;
+	    		color: $bright_green;
+	    	}
+	    }
+	}
+	.home-page .section-testimonials .testimonial-wrapper .testimonial-comment p {
+	    color: #00140E;
+	}
+	.is-white{
+		stroke: #00140E;
+	}
 
 
 } // end wrapper

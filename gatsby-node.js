@@ -29,12 +29,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
   const WorkPosts = result.data.allWordpressWpWork.edges
-  WorkPosts.forEach(post => {
+  WorkPosts.forEach((post, index) => {
+    //const post_path = post.frontmatter.path
     createPage({
       path: `/projects/${post.node.slug}`,
+      //post_path,
       component: WorkDetailTemplate,
       context: {
         id: post.node.wordpress_id,
+        pathSlug: post.node.slug,
+        prev: index === 0 ? null : WorkPosts[index - 1].node,
+        next: index === (WorkPosts.length - 1) ? null : WorkPosts[index + 1].node,
       },
     })
   })

@@ -76,6 +76,10 @@
 					.expertise-icon{
 						margin-bottom: 52px;
 						height: 54px;
+
+						.is-white{
+							@include transition-all;
+						}
 					}
 				}
 				

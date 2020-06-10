@@ -1,14 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 //import PageTransition from 'gatsby-plugin-page-transitions';
 import OutArrow from "../images/out-arrow.inline.svg";
 
-const WorkDetailTemplate = ({ data }) => {
+const WorkDetailTemplate = ({ data, pageContext }) => {
+	console.log(pageContext)
 	//const acfData = data.wordpressWpWork.acf
-	console.log("databug = "+JSON.stringify(data))
+	//console.log("databug = "+JSON.stringify(data))
+
+	const {next, prev} = pageContext
   
   return (
     <>
@@ -62,7 +65,23 @@ const WorkDetailTemplate = ({ data }) => {
 			          className={images.image_style[0]}
 			        />
                   ))}	
-                </div>    		
+
+	    		<div className="project-nav">  
+	                {prev &&
+	                	<Link className="prev-btn" to={`/projects/${prev.slug}/`}>
+	                		<span>Prev Project</span> <div className="title">{prev.title}</div>
+	                	</Link>
+	                } 
+	                {next &&
+	                	<Link className="next-btn" to={`/projects/${next.slug}/`}>
+	                		<span>Next Project</span> <div className="title">{next.title}</div>
+	                	</Link>
+	                }
+                </div>
+
+                </div> 
+
+                	
 	    	</div>
 	    </section>
 	    

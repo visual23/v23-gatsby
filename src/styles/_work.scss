@@ -11,6 +11,7 @@
 				color: #FFFFFF;
 				margin-bottom: 3px;
 				font-weight: normal;
+				@include transition-all;
 			}
 			span{
 				font-size: 20px;
@@ -42,7 +43,41 @@
 		.size-large{
 			width: 100%;
 			margin: 0 auto;
-			margin-bottom: 40px;
+			margin-bottom: 10px;
+		}
+
+		.project-nav{
+			margin-top: 88px;
+			margin-bottom: 80px;
+			position: relative;
+			display: flex;
+    		//justify-content: space-between;
+
+			a{
+				width: 40%;
+				display: block;
+				font-size: 20px;
+				line-height: 24px;
+				color: #09F8BF;			
+
+				@include transition-all;
+
+				&.prev-btn{
+					text-align: left;
+				}
+				&.next-btn{
+					text-align: right;
+					margin-left: auto;
+				}
+				span{
+					display: block;
+					margin-bottom: 2px;
+				}
+				.title{
+					color: #fff;
+					@include transition-all;
+				}
+			}
 		}
 	}
 	
