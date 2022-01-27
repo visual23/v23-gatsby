@@ -47,7 +47,7 @@
     "react-three-fiber": "^4.2.0",
     "react-transition-group": "^4.4.1",
     "slick-carousel": "^1.8.1",
-    "three": "^0.116.1",
+    "three": "^0.137.0",
     "vanta": "^0.5.15"
   },
   "devDependencies": {
